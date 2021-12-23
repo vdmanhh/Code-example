@@ -1,0 +1,18 @@
+.remove-from-sale-modal {
+  .body {
+    &__description {
+      text-align: center;
+      margin-top: 20px;
+    }
+    &__btn-group {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      margin-top: 40px;
+      .ant-btn {
+        margin: 0px 10px;
+        width: 120px;
+      }
+    }
+  }
+}

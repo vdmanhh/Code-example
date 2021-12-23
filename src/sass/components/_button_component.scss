@@ -1,0 +1,128 @@
+.button {
+  height: 40px;
+  border-radius: 90px;
+  border: none;
+  cursor: pointer;
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  &--default {
+    background: $color_white;
+    color: $color_cod_gray;
+    border: 2px solid $color_alto;
+    border-radius: 18px;
+
+    &:focus,
+    &:active,
+    &:hover {
+      color: $color_cod_gray;
+      background-color: $color_white;
+      border: 2px solid $color_alto;
+    }
+
+    &:disabled {
+      border: none;
+      color: $color_white;
+
+      svg {
+        path {
+          fill: $color_white;
+        }
+      }
+    }
+  }
+
+  &--light {
+    background-color: $color_lavender_grey;
+    color: $color_river_bed;
+
+    &:focus,
+    &:active,
+    &:hover {
+      color: $color_river_bed;
+      background-color: $color_lavender_grey;
+      border: 1px solid $color_river_bed;
+    }
+  }
+
+  &--primary {
+    background-color: $color_dodger_blue;
+
+    &:focus,
+    &:active,
+    &:hover {
+      background-color: $color_dodger_blue;
+    }
+  }
+
+  &--secondary {
+    background-color: $color_river_bed;
+    color: $color_athens_gray;
+
+    &:hover {
+      background-color: $color_river_bed;
+      color: $color_athens_gray;
+      opacity: 0.5;
+    }
+    &:focus {
+      background-color: $color_river_bed;
+      color: $color_athens_gray;
+    }
+  }
+
+  &--border-secondary {
+    background-color: $color_white;
+    color: $color_river_bed;
+    border: 2px solid $color_river_bed;
+    &:focus,
+    &:active,
+    &:hover {
+      color: $color_river_bed;
+      border: 2px solid $color_river_bed;
+      opacity: 0.7;
+    }
+  }
+
+  &:focus,
+  &:active,
+  &:hover {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+.btn-border {
+  &--secondary {
+    background-color: transparent;
+    color: $color_river_bed;
+    border-color: $color_river_bed;
+    border: 1px solid;
+
+    &:focus,
+    &:active,
+    &:hover {
+      color: $color_river_bed;
+      background-color: $color_chablis;
+      border-color: $color_river_bed;
+    }
+  }
+
+  &--nobel {
+    background-color: $color_nobel;
+    color: $color_white;
+
+    &:focus,
+    &:active,
+    &:hover {
+      color: $color_white;
+      background-color: $color_nobel;
+      border-color: $color_nobel;
+    }
+  }
+}

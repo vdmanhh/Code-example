@@ -1,0 +1,336 @@
+.nft-page {
+  width: 95%;
+  margin: 20px auto;
+  display: block;
+  .title {
+    display: flex;
+    align-items: center;
+    svg {
+      &:hover {
+        opacity: 0.5;
+        cursor: pointer;
+      }
+    }
+    &__text {
+      margin-left: 10px;
+      font-size: 20px;
+      font-weight: 600;
+    }
+  }
+
+  .body {
+    display: flex;
+    margin-top: 60px;
+    .form-box {
+      width: 100%;
+      display: flex;
+      .create-form {
+        width: 60%;
+        .upload {
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+          padding: 20px;
+          background-color: $color_white;
+          border-radius: 10px;
+          &__title {
+            font-size: 18px;
+            font-weight: 500;
+          }
+
+          &__description {
+            font-size: 12px;
+          }
+
+          &__form {
+            .ant-upload-select-picture-card {
+              width: 100%;
+              height: 160px;
+              padding: 10px 0px;
+              background-color: $color_white;
+              margin-top: 30px;
+              border-color: $color_nobel;
+              border-radius: 10px;
+              .ant-upload {
+                display: block;
+                position: relative;
+              }
+            }
+
+            &--icon {
+              font-size: 40px;
+              margin-top: 20px;
+            }
+
+            &--drag-drop {
+              font-size: 12px;
+              color: $color_nobel;
+            }
+
+            &--upload-device {
+              font-size: 12px;
+              color: $color_dodger_blue;
+            }
+
+            &--image {
+              height: 100%;
+              object-fit: cover;
+            }
+
+            &--close {
+              position: absolute;
+              right: 20px;
+              font-size: 20px;
+            }
+          }
+        }
+
+        .royalties-number-of-copies {
+          display: flex;
+          .royalty {
+            flex: 1;
+            position: relative;
+            margin-right: 20px;
+            &__suffix {
+              position: absolute;
+              top: 30px;
+              right: 15px;
+            }
+          }
+
+          .number-of-copies {
+            flex: 1;
+          }
+        }
+
+        .description {
+          &__title {
+            font-size: 13px;
+            font-weight: 500;
+          }
+
+          &__desc {
+            font-size: 12px;
+            color: rgba(0, 0, 0, 0.4);
+            margin-bottom: 4px;
+          }
+        }
+
+        .clans {
+          margin-bottom: 40px;
+          &__title-box {
+            display: flex;
+
+            &--menu {
+              font-size: 20px;
+              margin-right: 10px;
+            }
+
+            &--text {
+              .title {
+                font-size: 20px;
+              }
+              .description {
+                color: rgba(0, 0, 0, 0.4);
+                font-size: 12px;
+              }
+            }
+          }
+
+          &__body {
+            margin: 0px 40px;
+            .slick-slider {
+              .slick-arrow {
+                &::before {
+                  color: $color_black;
+                }
+              }
+
+              .clan-item {
+                @include boxShadow();
+                @include hover();
+                background-color: $color_white;
+                margin: 10px;
+                width: 100px !important;
+                border-radius: 20px;
+                height: 100px;
+
+                &__image {
+                  display: flex !important;
+                  justify-content: center;
+                  margin-top: 20px;
+                  margin-bottom: 10px;
+                }
+
+                &__name {
+                  text-align: center;
+                }
+              }
+            }
+          }
+        }
+
+        .level,
+        .strength,
+        .speed,
+        .luck {
+          margin-left: 20px;
+          &__box-title {
+            display: flex;
+
+            &--icon {
+              font-size: 20px;
+              margin-right: 10px;
+            }
+
+            &--text {
+              .title {
+                font-size: 20px;
+              }
+              .description {
+                color: rgba(0, 0, 0, 0.4);
+                font-size: 12px;
+              }
+            }
+          }
+
+          &__body {
+            .ant-slider {
+              margin-left: 30px;
+            }
+          }
+        }
+
+        .put-on-sale {
+          @include boxShadow();
+          margin-top: 60px;
+          background-color: $color_white;
+          padding: 20px 20px;
+          border-radius: 10px;
+          font-weight: 600;
+          font-size: 16px;
+          width: 100%;
+          &__header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+          }
+
+          &__body {
+            &--description {
+              font-size: 12px;
+              color: rgba(0, 0, 0, 0.4);
+              font-weight: lighter;
+            }
+            &--input-box {
+              display: flex;
+              justify-content: space-between;
+              margin: 20px auto;
+              .enter-entities {
+                flex: 1;
+                margin-right: 10px;
+              }
+              .enter-price {
+                margin-right: 10px;
+              }
+              .select-token {
+                flex: 1;
+              }
+              .enter-price-box {
+                flex: 1;
+                position: relative;
+                &__usd {
+                  text-align: right;
+                  margin-right: 10px;
+                }
+                &__icon {
+                  position: absolute;
+                  top: 7px;
+                  right: 30px;
+                }
+              }
+            }
+          }
+        }
+
+        .btn-group {
+          display: flex;
+          margin-top: 50px;
+          margin-bottom: 50px;
+          .ant-btn {
+            width: 150px;
+          }
+          .btn-discard {
+            margin-right: 20px;
+          }
+        }
+      }
+
+      .preview-image {
+        width: 40%;
+        margin-left: 60px;
+        background-color: $color_white;
+        height: fit-content;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+
+        &__text {
+          font-size: 20px;
+          font-weight: 500;
+        }
+
+        &__text-gruder {
+          font-size: 20px;
+          margin-top: 10px;
+          font-weight: 500;
+          word-break: break-all;
+        }
+
+        &__content {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          margin-top: 40px;
+          text-align: center;
+          height: 450px;
+          border-radius: 10px;
+          border: 1px dashed $color_nobel;
+          svg {
+            font-size: 40px;
+          }
+
+          &--text {
+            color: rgba(0, 0, 0, 0.4);
+            font-size: 12px;
+            margin-top: 10px;
+          }
+
+          &--image {
+            width: 100%;
+            object-fit: contain;
+            max-height: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.signing-request-modal {
+  .body {
+    &__img {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+    }
+    &__loading-icon {
+      margin-top: 50px;
+      margin-bottom: 30px;
+      display: flex;
+      justify-content: center;
+    }
+    &__description {
+      text-align: center;
+      margin-top: 20px;
+    }
+  }
+}

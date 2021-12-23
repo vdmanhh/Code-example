@@ -1,0 +1,26 @@
+@mixin boxShadow() {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+@mixin hover() {
+  &:hover {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+}
+
+@mixin customScrollbar() {
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+  &::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 20px;
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+}

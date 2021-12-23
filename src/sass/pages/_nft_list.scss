@@ -1,0 +1,87 @@
+.nft-list-page {
+  width: 95%;
+  margin: 20px auto;
+  display: block;
+  .title {
+    display: flex;
+    align-items: center;
+    &__text {
+      margin-left: 10px;
+      font-size: 20px;
+      font-weight: 600;
+    }
+  }
+
+  .filter {
+    display: flex;
+    margin: 30px 0px;
+    .search-box {
+      @include boxShadow();
+      width: 70%;
+      margin-right: 20px;
+      background-color: $color_white;
+      padding: 30px 30px 30px 70px;
+      border-radius: 10px;
+      .search-form {
+        &__name {
+          width: 100%;
+          margin: 20px 0px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .form-item {
+            width: 80%;
+          }
+
+          &--undo {
+            @include hover();
+            font-size: 30px;
+          }
+        }
+
+        &__filter {
+          display: flex;
+          align-items: center;
+          margin-top: 40px;
+          &--label {
+            width: 20%;
+            font-size: 17px;
+            font-weight: 600;
+          }
+
+          &--type,
+          &--status {
+            width: 35%;
+            .form-item {
+              width: 150px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .parameters {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    margin-top: 60px;
+    &__total-nft,
+    &__dort,
+    &__item {
+      display: flex;
+      font-size: 20px;
+      &--icon {
+        font-size: 37px;
+        margin-right: 20px;
+      }
+
+      &--text {
+        .total {
+          font-size: 25px;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

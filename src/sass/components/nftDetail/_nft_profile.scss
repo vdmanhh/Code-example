@@ -1,0 +1,125 @@
+.nft-profile {
+  @include boxShadow();
+  background-color: $color_white;
+  border-radius: 20px;
+  padding: 30px 20px;
+  .group-btn {
+    display: flex;
+    justify-content: flex-end;
+
+    &__sell-nft {
+      margin-right: 10px;
+    }
+
+    &__remove-from-sale {
+      margin-right: 10px;
+    }
+
+    &__more-action {
+      position: relative;
+      margin-right: 20px;
+      &--btn {
+        width: 170px;
+      }
+      &--list {
+        @include boxShadow();
+        position: absolute;
+        z-index: 2;
+        background-color: $color_white;
+        margin-top: 5px;
+        padding: 10px;
+        border-radius: 10px;
+        width: 100%;
+        .action-item {
+          @include hover();
+          padding: 3px 0px;
+          font-weight: 600;
+          a {
+            color: $color_black;
+          }
+        }
+      }
+    }
+  }
+
+  .nft-profile-body {
+    display: flex;
+    margin-top: 30px;
+    &__left-content {
+      @include boxShadow();
+      flex: 50%;
+      padding: 40px 30px;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      border-radius: 20px;
+      margin-right: 20px;
+      .nft-grid-content {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 15px;
+        &__name {
+          &--description {
+            max-width: 200px;
+            margin-bottom: 0px !important;
+          }
+        }
+        .title {
+          font-size: 16px;
+          font-weight: 600;
+        }
+      }
+      .description {
+        &__content {
+          @include customScrollbar();
+          overflow-y: auto;
+          word-break: break-all;
+          height: 195px;
+        }
+      }
+    }
+
+    &__right-content {
+      @include boxShadow();
+      flex: 50%;
+      padding: 40px 30px;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      border-radius: 20px;
+      margin-left: 20px;
+      &--image {
+        @include boxShadow();
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 20px;
+        background-color: $color_river_bed;
+        width: 100%;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        img {
+          width: 100%;
+          height: 100%;
+          max-width: 400px;
+          object-fit: cover;
+        }
+      }
+      &--grid-content {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin-top: 20px;
+        gap: 15px;
+        .nft-profile-trait {
+          &__name {
+            max-width: 200px;
+            margin-bottom: 0px !important;
+          }
+        }
+        .nft-profile-clans {
+          img {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+}

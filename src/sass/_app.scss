@@ -1,0 +1,27 @@
+@import 'variables';
+@import 'common';
+@import 'layout';
+@import 'header';
+
+//Global
+@import './mixin';
+
+//Components
+@import './components/button_component';
+@import './components/modal';
+@import './components/formitem';
+@import './components/table';
+@import './components/header';
+@import './components/tabs';
+@import './components/nftDetail/nft_profile';
+@import './components/nftDetail/modal_delete_nft';
+@import './components/nftDetail/modal_remove_from_sale';
+
+//pages
+@import './pages//login_page';
+@import './pages/create_nft';
+@import './pages/nft_list';
+@import './pages/nft_detail';
+@import './pages/sell_nft';
+@import './pages/revenue/revenue';
+@import './pages/revenue/detail_modal';

@@ -1,0 +1,19 @@
+
+.tab-common {
+  .ant-tabs-nav {
+    &::before {
+      border-bottom: solid 1px rgba(0, 0,0,0.1);
+    }
+    .ant-tabs-nav-wrap {
+      .ant-tabs-nav-list {
+        .ant-tabs-tab {
+          font-size: 18px !important;
+          font-weight: 600;
+        }
+        .ant-tabs-tab-active {
+          // font-weight: bold;
+        }
+      }
+    }
+  }
+}

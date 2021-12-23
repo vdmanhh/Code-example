@@ -1,0 +1,69 @@
+.ant-modal {
+  .ant-modal-content {
+    border-radius: 20px;
+  }
+
+  .ant-modal-close {
+    top: 25px;
+    right: 25px;
+  }
+
+  .modal-wrap {
+    .title {
+      margin-top: 30px;
+      font-size: 25px;
+      font-weight: bold;
+      text-align: center !important;
+    }
+  }
+}
+
+.unsave-change-modal {
+  .body {
+    &__description {
+      text-align: center;
+      margin-top: 20px;
+    }
+    &__btn-group {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      margin-top: 40px;
+      .ant-btn {
+        margin: 0px 10px;
+        width: 100px;
+      }
+    }
+  }
+}
+
+
+.success-modal {
+  .body {
+    &__description {
+      text-align: center;
+      margin-top: 20px;
+    }
+    img {
+      margin: auto;
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+.fail-modal {
+  .body {
+    &__description {
+      text-align: center;
+      margin-top: 20px;
+    }
+    img {
+      margin: auto;
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

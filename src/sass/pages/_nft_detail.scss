@@ -1,0 +1,31 @@
+@import '../components/nftDetail/modal_process_cancel';
+
+
+.nft-detail-page {
+  width: 95%;
+  margin: 20px auto;
+  display: block;
+  .title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    svg {
+      &:hover {
+        opacity: 0.5;
+        cursor: pointer;
+      }
+    }
+    &__text {
+      margin-left: 10px;
+      font-size: 20px;
+      font-weight: 600;
+    }
+  }
+  .body {
+    &__tabs {
+      .ant-tabs-tabpane {
+        background-color: transparent;
+      }
+    }
+  }
+}

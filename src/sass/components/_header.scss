@@ -1,0 +1,54 @@
+.header {
+  display: flex;
+  align-items: center;
+  &__right {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    height: 45px;
+
+    &--profile {
+      margin-left: 20px;
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      background-color: $color_white;
+      padding: 10px 20px;
+      height: 100%;
+      border-radius: 30px;
+      border: 2px solid $color_dodger_blue;
+      .username {
+        font-size: 16px;
+        font-weight: 600;
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+.header-dropdown {
+  @include boxShadow();
+  background-color: $color_white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  &__detail {
+    display: flex;
+    align-items: center;
+    &--address {
+      margin-left: 10px;
+    }
+  }
+  .ant-menu {
+    border-right: none;
+    .ant-menu-item {
+      @include hover();
+      font-size: 17px;
+      display: flex;
+      align-items: center;
+      color: rgba(0, 0, 0, 0.85);
+      background-color: $color_white !important;
+    }
+  }
+}

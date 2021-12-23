@@ -1,0 +1,19 @@
+.process-cancel-sell-order-modal {
+  .body {
+    &__img {
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+    }
+    &__loading-icon {
+      margin-top: 20px;
+      margin-bottom: 30px;
+      display: flex;
+      justify-content: center;
+    }
+    &__description {
+      text-align: center;
+      margin-top: 20px;
+    }
+  }
+}
